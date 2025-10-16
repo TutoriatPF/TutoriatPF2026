@@ -2,11 +2,11 @@
 
 This repository contains the course materials, exercises and solutions for the Functional Programming course (Haskell). The website is built with Docusaurus and serves lecture notes, examples and practical assignments.
 
-Live site: https://tutoriatpf.github.io/TutoriatPF2026/
+Live site: <https://tutoriatpf.github.io/TutoriatPF2026/>
 
 Quick links
 
-- Live site: https://tutoriatpf.github.io/TutoriatPF2026/
+- Live site: <https://tutoriatpf.github.io/TutoriatPF2026/>
 - Source: this repository
 
 Prerequisites

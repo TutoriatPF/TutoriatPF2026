@@ -11,33 +11,33 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Pure Functional Programming",
+    title: "Programare Funcțională Pură",
     imgSrc: require("@site/static/img/homepage/purity.png").default,
     description: (
       <>
-        Haskell&apos;s purity ensures functions have no side effects, leading to
-        more predictable and testable code.
+        Purația Haskell asigură că funcțiile nu au efecte secundare, ducând la
+        cod mai previzibil și testabil.
       </>
     ),
   },
   {
-    title: "Lazy Evaluation",
+    title: "Evaluare Leneșă",
     imgSrc: require("@site/static/img/homepage/lazy.png").default,
     description: (
       <>
-        Benefit from Haskell&apos;s lazy evaluation, which defers computations
-        until needed, optimizing performance and enabling infinite data
-        structures.
+        Beneficiază de evaluarea leneșă a Haskell, care amână calculele până
+        când sunt necesare, optimizând performanța și permițând structuri de
+        date infinite.
       </>
     ),
   },
   {
-    title: "Strong Static Typing",
+    title: "Tipizare Statică Puternică",
     imgSrc: require("@site/static/img/homepage/static_types.png").default,
     description: (
       <>
-        Leverage Haskell&apos;s advanced type system to catch errors at compile
-        time, ensuring safer and more reliable software.
+        Folosește sistemul avansat de tipuri al Haskell pentru a prinde erorile
+        la timpul de compilare, asigurând software mai sigur și mai fiabil.
       </>
     ),
   },

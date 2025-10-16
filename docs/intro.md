@@ -2,46 +2,57 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Intro Tutoriat
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## Ce este Haskell?
 
-## Getting Started
+Haskell este un limbaj de programare pur funcțional cunoscut pentru tipizarea statică puternică, evaluarea leneșă și accentul pe imutabilitate. Este grozav pentru construirea de aplicații fiabile, concurente și de înaltă performanță.
 
-Get started by **creating a new site**.
+### Ce vei avea nevoie
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- [GHC (Glasgow Haskell Compiler)](https://www.haskell.org/ghcup/install/) sau [tryhaskell.org](https://tryhaskell.org) pentru a rula cod Haskell în browser.
 
-### What you'll need
+## Instalare
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Instrucțiuni Instalare Haskell folosind GHCup
 
-## Generate a new site
+GHCup permite dezvoltatorilor să instaleze versiuni ale GHC( Glasgow Haskell Compiler) și să gestioneze proiecte pe sisteme precum GNU/Linux, macOS, FreeBSD, și Windows, instalând întregul Haskell Toolchain, care este format din:
+GHC
+Cabal -  permite gestionarea proiectelor și a dependințelor
+HLS (Haskell Language Server) - oferă programelor de editat informații despre codul sursă precum erori sau sugestii de completare.
+Stack - poate gestiona proiecte cu versiuni diferite ale compilatorului GHC, oferind posibilitatea de a avea teste.
 
-Generate a new Docusaurus site using the **classic template**.
+### Instalare Windows
 
-The classic template will automatically be added to your project after you run the command:
+Un clip cu procesul de instalare pe Windows poate fi găsit aici - [link youtube](https://www.youtube.com/watch?v=bB4fmQiUYPw).
 
-```bash
-npm init docusaurus@latest my-website classic
+copiați comanda de mai jos, care va declanșa instalarea pachetului GHCup:
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;Invoke-Command -ScriptBlock ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -ArgumentList $true
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+deschideți un terminal Powershell( Ctrl + Shift + P), inserați comanda copiată anterior utilizând Click Dreapta și executați comanda.
+procesul de instalare va cere câteva confirmări pentru care apăsați Enter. GHCup va fi instalat în calea predefinită C:/ghcup.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+În momentul în care procesul de instalare s-a terminat, reporniți terminalul Powershell. Puteți deschide o interfață interactivă a GHC folosind comanda `ghci` .
 
-## Start your site
+### Instalare Linux, macOS, FreeBSD sau Windows Subsystem 2 pentru Linux
 
-Run the development server:
+copiați comanda de mai jos, care va începe procesul de instalare:
 
 ```bash
-cd my-website
-npm run start
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+deschideți un terminal( Ctrl + Alt + t), inserați comanda copiată anterior și executați comanda.
+procesul de instalare va cere câteva confirmări pentru care apăsați Enter. GHCup va fi instalat în calea ./ghcup, în mod predefinit.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+În momentul în care procesul de instalare s-a terminat, reporniți terminalul. Puteți deschide o interfață interactivă a GHC folosind comanda `ghci` .
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+IDE
+
+[VSCode - Haskell poate fi integrat in VSCode](https://www.haskell.org/ghcup/install/#vscode-integration)
+orice editor text poate fi folosit pentru a scrie cod
+
+[Pentru mai multe informații](https://www.haskell.org/ghcup/install/#first-steps)
